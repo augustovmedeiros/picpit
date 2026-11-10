@@ -1,0 +1,16 @@
+target/
+*.class
+*.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+
+# Maven Wrapper: o jar é baixado automaticamente se não existir
+!.mvn/wrapper/maven-wrapper.jar
+

@@ -1,0 +1,31 @@
+<%-- Cabeçalho comum. Antes do include, defina: <c:set var="tituloPagina" value="..."/> --%>
+<fmt:setLocale value="pt_BR"/>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><c:out value="${tituloPagina}"/> · Catálogo de Mídias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="<c:url value='/css/estilo.css'/>">
+    <link rel="icon" href="<c:url value='/img/favicon.svg'/>" type="image/svg+xml">
+    <script src="<c:url value='/js/app.js'/>" defer></script>
+</head>
+<body>
+<a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+    <div class="topo__interno">
+        <a class="marca" href="<c:url value='/itens'/>">
+            <span class="marca__icone" aria-hidden="true">▤</span>
+            <span>Catálogo <strong>de Mídias</strong></span>
+        </a>
+        <nav class="topo__nav" aria-label="Navegação principal">
+            <a href="<c:url value='/itens'/>">Catálogo</a>
+            <a class="botao botao--primario botao--pequeno" href="<c:url value='/itens/novo'/>">+ Novo item</a>
+        </nav>
+    </div>
+</header>
+<main id="conteudo" class="conteudo">
+
